@@ -1,0 +1,33 @@
+<head>
+	<title>Meddit</title>
+</head>
+
+<body>
+	<h1>Meddit</h1>
+	<p>////////////////////////////////////////////</p>
+	<!-- {{> gifList}} -->
+	{{>postGifForm}}
+	{{>gifList}}
+</body>
+
+
+
+<template name="postGifForm">
+	<h1>Post a gif</h1>
+	<form class="post-gif">
+		<input name="title" type="text" placeholder="Title">
+		<input name="url" type="text" placeholder=".gif url">
+		<input name="nick" type="text" placeholder="Nickname">
+		<br>
+		<input type="submit" value="Share with the world">
+	</form>
+</template>
+
+<template name="gifList">
+	<section>
+		<h1>Gifs</h1>
+		{{#each list}}
+			{{> gif}}
+		{{/each}}
+	</section>
+</template>
