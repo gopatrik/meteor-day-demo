@@ -1,0 +1,112 @@
+html,body {
+	height: 100%;	
+	padding: 0;	
+	margin:0;
+}
+
+body{
+	min-height: 100%;
+	background: black;
+	font-family: avenir, sans;
+	color: white;
+}
+h1,h2 {
+	margin-left: 30px;
+}
+
+form {
+	margin: 30px;
+}
+
+form input[type=text] {
+	font-size: 30px;
+	border: none;
+	padding: 10px;
+	outline: none;
+	margin-right: 20px;
+}
+
+form input[type=submit] {
+	margin-top: 20px;
+	color:white;
+	font-weight: bold;
+	border:0;
+	outline: 0;
+	padding: 10px;
+	background: #CC4245;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.gif {
+	width:100%;
+	background-repeat:no-repeat;
+	height:auto;
+	position:relative;
+}
+
+.gif img {
+	width:100%;
+	height:auto;
+	position: relative;
+	z-index: -1;
+}
+
+.hud {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top:0;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+	z-index: 2;
+	cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+}
+
+.gif header {
+	position: absolute;
+	top:0;
+	z-index: 3;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.hud footer, .gif header {
+	width: 100%;
+	height: 60px;
+	font-size: 40px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.hud .center {
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	position:  absolute;
+}
+
+.hud footer {
+	position: absolute;
+	bottom:0;
+}
+
+.gif:hover .hud {
+	display: block;
+	
+}
+
+.gif:hover img {
+	opacity: 0.6;
+}
